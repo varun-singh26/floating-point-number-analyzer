@@ -4,7 +4,7 @@
 #define FP_TYPE double
 #define INT_TYPE long
 #define EXPONENT_LENGTH 11u
-#define ONE 1lu //???
+#define ONE 1lu
 #define INPUT_FORMAT "%lf"
 #define INT_FORMAT "%lu"
 #else
@@ -29,15 +29,15 @@ typedef struct Components{
     unsigned INT_TYPE mantissa: MANTISSA_LENGTH;
     unsigned int exponent: EXPONENT_LENGTH;
     unsigned int sign: SIGN_LENGTH;
+
 } Components;
 
 typedef union Converter {
 
       FP_TYPE f;
-      
       unsigned INT_TYPE u;
-
       Components components;
+
 } Converter;
 
 void print_bits( unsigned INT_TYPE value, int length);
