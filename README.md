@@ -1,7 +1,11 @@
 <h1> Floating-point number analyzer </h1>
 
+<h2> Purpose: </h2>
+<p> The purpose of this program is to return the bitwise representation of floating-type input (either a float or double) entered by the user. </p>
 
-Purpose:
+<p> With the returned bitwise representation, the program then demonstrates how the different bits can be broken up and put into the following formula
+to calculate the user input and ensure the bitwise representation returned is, indeed, correct. </p>
+
 
 Normalized form formula (double and float):
   (-1)^S * (1 + M) * 2^(E - BIAS)
