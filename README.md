@@ -10,6 +10,13 @@ to calculate the user input and ensure the bitwise representation returned is, i
 <strong><p>In the above formula S refers to the sign of the value, M refers to the mantissa, E refers to the raw exponent, and the BIAS is either 127 (if representing float) or 
 1023 (if representing double) for our purposes</strong></p>
 
+<p> The bitwise representation of our floating-point type with either require 32 bits (if it's representing a float) or 64 bits (if it's representing a double) </p>
+<p> In both cases, the single highest order bit will refer to the sign (S in the formula). Since a singular bit can either be 0 or 1, S determines if our value is positive (0) or negative (1) </p>
+<p> In the float case, the next 8 bits refer to the raw exponent, E, to be used in the above formula. In the double case, it's the next 11 bits after the sign bit that refer to E. </p>
+<p> In the float case, the remaining 23 bits are used to calculate the mantissa, M, in the above formula. In the double case, it's the remaining 52 bits after the raw exponent bits which are used to calculate M. </p>
+
+<p> Here is a visual example of the bitwise representation of a float (32 bits). Note that significand here is the same thing as mantissa</p>
+<img alt="bitwise representation of float" src="~/Desktop/0067-Floating-Point_Representation_Feature_Image.webp"> 
 
 Normalized form formula (double and float):
   (-1)^S * (1 + M) * 2^(E - BIAS)
