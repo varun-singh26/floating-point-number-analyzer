@@ -7,9 +7,10 @@
 to calculate the user input and ensure the bitwise representation returned is, indeed, correct: </p>
 
 <blockquote>
-<em><math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math></em>
-<strong><p>In the above formula S refers to the sign of the value, M refers to the mantissa, E refers to the raw exponent, and the BIAS is either 127 (if representing float) or 
-1023 (if representing double) for our purposes</strong></p>
+<math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math>
+<br>
+<p>In the above formula S refers to the sign of the value, M refers to the mantissa, E refers to the raw exponent, and the BIAS is either 127 (if representing float) or 
+1023 (if representing double) for our purposes</p>
 </blockquote>
 
 <p> The bitwise representation of our floating-point type with either require 32 bits (if it's representing a float) or 64 bits (if it's representing a double) </p>
