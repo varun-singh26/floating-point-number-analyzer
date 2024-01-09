@@ -16,7 +16,8 @@ to calculate the user input and ensure the bitwise representation returned is, i
 <p> In the float case, the remaining 23 bits are used to calculate the mantissa, M, in the above formula. In the double case, it's the remaining 52 bits after the raw exponent bits which are used to calculate M. </p>
 
 <p> Here is a visual example of the bitwise representation of a float (32 bits). Note that significand here is the same thing as mantissa</p>
-<img alt="bitwise representation of float" src="~/Desktop/0067-Floating-Point_Representation_Feature_Image.webp"> 
+<img width="1117" alt="image" src="https://github.com/varun-singh26/floating-point-number-analyzer/assets/149445092/15684853-9aa8-45d9-887d-99692e5e57a3">
+
 
 Normalized form formula (double and float):
   (-1)^S * (1 + M) * 2^(E - BIAS)
