@@ -8,6 +8,7 @@ to calculate the user input and ensure the bitwise representation returned is, i
 <br>
 <img width="325" alt="image" src="https://github.com/varun-singh26/floating-point-number-analyzer/assets/149445092/89c26db0-c6f3-4680-816b-46459446db8f">
 <br>
+<br>
 
 <blockquote> <h3> Formula used: </h3>
 <math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math>
