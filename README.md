@@ -5,22 +5,31 @@
 
 <p> With the returned bitwise representation, the program then demonstrates how the different bits can be broken up and put into the following formula
 to calculate the user input and ensure the bitwise representation returned is, indeed, correct: </p>
+<br>
+<img width="325" alt="image" src="https://github.com/varun-singh26/floating-point-number-analyzer/assets/149445092/89c26db0-c6f3-4680-816b-46459446db8f">
+<br>
 
-<blockquote>
+<blockquote> <h3> Formula used: </h3>
 <math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math>
 <br>
 <p>In the above formula S refers to the sign of the value, M refers to the mantissa, E refers to the raw exponent, and the BIAS is either 127 (if representing float) or 
 1023 (if representing double) for our purposes</p>
 </blockquote>
-
+<br>
 <p> The bitwise representation of our floating-point type with either require 32 bits (if it's representing a float) or 64 bits (if it's representing a double) </p>
-<p> In both cases, the single highest order bit will refer to the sign (S in the formula). Since a singular bit can either be 0 or 1, S determines if our value is positive (0) or negative (1) </p>
-<p> In the float case, the next 8 bits refer to the raw exponent, E, to be used in the above formula. In the double case, it's the next 11 bits after the sign bit that refer to E. </p>
-<p> In the float case, the remaining 23 bits are used to calculate the mantissa, M, in the above formula. In the double case, it's the remaining 52 bits after the raw exponent bits which are used to calculate M. </p>
 
+<dl>
+<dt> Signed bit </dt>
+  <dd> In both cases, the single highest order bit will refer to the sign (S in the formula). Since a singular bit can either be 0 or 1, S determines if our value is positive (0) or negative (1).     </dd>
+<dt> Exponent bits </dt>
+  <dd> In the float case, the next 8 bits refer to the raw exponent, E, to be used in the above formula. In the double case, it's the next 11 bits after the sign bit that refer to E. </dd>
+<dt> Mantissa bits </dt>
+  <dd> In the float case, the remaining 23 bits are used to calculate the mantissa, M, in the above formula. In the double case, it's the remaining 52 bits after the raw exponent bits which are used to calculate M. </dd>
+</dl>
+<br>
 <p> Here is a visual example of the bitwise representation of a float (32 bits). Note that significand here is the same thing as mantissa</p>
 <img width="1117" alt="image" src="https://github.com/varun-singh26/floating-point-number-analyzer/assets/149445092/15684853-9aa8-45d9-887d-99692e5e57a3">
-
+<br>
 
 Normalized form formula (double and float):
   (-1)^S * (1 + M) * 2^(E - BIAS)
