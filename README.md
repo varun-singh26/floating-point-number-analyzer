@@ -4,9 +4,11 @@
 <p> The purpose of this program is to return the bitwise representation of floating-type input (either a float or double) entered by the user. </p>
 
 <p> With the returned bitwise representation, the program then demonstrates how the different bits can be broken up and put into the following formula
-to calculate the user input and ensure the bitwise representation returned is, indeed, correct. </p>
+to calculate the user input and ensure the bitwise representation returned is, indeed, correct: </p>
 
-<math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math>
+<em><math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math></em>
+<strong><p>In the above formula S refers to the sign of the value, M refers to the mantissa, E refers to the raw exponent, and the BIAS is either 127 (if representing float) or 
+1023 (if representing double) for our purposes</strong></p>
 
 
 Normalized form formula (double and float):
