@@ -6,6 +6,8 @@
 <p> With the returned bitwise representation, the program then demonstrates how the different bits can be broken up and put into the following formula
 to calculate the user input and ensure the bitwise representation returned is, indeed, correct. </p>
 
+<math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math>
+
 
 Normalized form formula (double and float):
   (-1)^S * (1 + M) * 2^(E - BIAS)
