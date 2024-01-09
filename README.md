@@ -1,5 +1,5 @@
 <h1> Floating-point number analyzer </h1>
-<hr> 
+
 
 Purpose:
 
