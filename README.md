@@ -3,14 +3,17 @@
 <h2> Purpose: </h2>
 <p> The purpose of this program is to return the bitwise representation of floating-type input (either a float or double) entered by the user. </p>
 
-<p> With the returned bitwise representation, the program then demonstrates how the different bits can be broken up and put into the following formula
+<p> With the returned bitwise representation, the program then demonstrates how the different bits can be broken up and put into the following formula <math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math>
 to calculate the user input and ensure the bitwise representation returned is, indeed, correct: </p>
 <br>
 <img width="325" alt="image" src="https://github.com/varun-singh26/floating-point-number-analyzer/assets/149445092/89c26db0-c6f3-4680-816b-46459446db8f">
 <br>
 <br>
+<p>In the above formula S refers to the sign of the value, M refers to the mantissa, E refers to the raw exponent, and the BIAS is either 127 (if representing float) or 
+1023 (if representing double) for our purposes</p>
 <br>
 <br>
+
 
 <blockquote> <h3> Formula used: </h3>
 <math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math>
@@ -30,7 +33,7 @@ to calculate the user input and ensure the bitwise representation returned is, i
   <dd> In the float case, the remaining 23 bits are used to calculate the mantissa, M, in the above formula. In the double case, it's the remaining 52 bits after the raw exponent bits which are used to calculate M. </dd>
 </dl>
 <br>
-<p> Here is a visual example of the bitwise representation of a float (32 bits). Note that significand here is the same thing as mantissa</p>
+<p> Here is a visual example of the bitwise representation of a float (32 bits). Note that significand here is the same thing as mantissa.</p>
 <img width="1117" alt="image" src="https://github.com/varun-singh26/floating-point-number-analyzer/assets/149445092/15684853-9aa8-45d9-887d-99692e5e57a3">
 <br>
 
