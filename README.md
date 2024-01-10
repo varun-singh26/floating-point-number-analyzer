@@ -4,7 +4,7 @@
 <p> The purpose of this program is to return the bitwise representation of floating-type input (either a float or double) entered by the user. </p>
 
 <p> With the returned bitwise representation, the program then demonstrates how the different bits can be broken up and put into the following formula (reconstitution) <math> (-1)<sup>S</sup> * (1 + M) * 2<sup>(E - BIAS)</sup> </math>
-to calculate the user input and ensure the bitwise representation returned is, indeed, correct: </p>
+to recalculate the user input and ensure the bitwise representation returned is, indeed, correct: </p>
 <br>
 <img width="325" alt="image" src="https://github.com/varun-singh26/floating-point-number-analyzer/assets/149445092/89c26db0-c6f3-4680-816b-46459446db8f">
 <br>
